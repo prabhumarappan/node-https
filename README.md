@@ -1,16 +1,20 @@
 # node-https
 
 Frameworks used:
+<br>
 Express
 
 Libraries used:
+<br>
 https
 
 Template engine:
+<br>
 ejs
 
-Returns json data about a single user.
-
+What It Does:
+<br>
+Displays a table of user details fetched from a text file online.
 
 **Documentation**
 
@@ -25,4 +29,3 @@ Returns json data about a single user.
 * **Data Params**
 
   None
-
