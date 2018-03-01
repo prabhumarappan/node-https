@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <style>
+        td{
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <% var userkeys = [] %>
+    <% Object.keys(users[0]).forEach(function (key) { %>
+        <% userkeys.push(key); %>
+    <% })%>
+    <table>
+        <tr>
+            <% for(var inneritr=0; inneritr < userkeys.length; inneritr++){%>
+                <td>
+                    <%= [userkeys[inneritr]] %>
+                </td>
+            <% } %>
+        </tr>
+        <% for(var index=0; index< users.length; index++){ %>
+            <tr>
+                <% for(var inneritr=0; inneritr < userkeys.length; inneritr++){%>
+                    <td>
+                        <%= users[index][userkeys[inneritr]] %>
+                    </td>
+                <% } %>
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
